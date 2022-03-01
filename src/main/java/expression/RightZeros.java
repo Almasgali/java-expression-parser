@@ -2,11 +2,11 @@ package expression;
 
 import java.util.Objects;
 
-public class RightZeroes implements MyExpression {
+public class RightZeros implements MyExpression {
 
     private final MyExpression expression;
 
-    public RightZeroes(MyExpression expression) {
+    public RightZeros(MyExpression expression) {
         this.expression = expression;
     }
 
@@ -43,7 +43,7 @@ public class RightZeroes implements MyExpression {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || o.getClass() != this.getClass()) return false;
-        RightZeroes that = (RightZeroes) o;
+        RightZeros that = (RightZeros) o;
         return Objects.equals(expression, that.expression);
     }
 

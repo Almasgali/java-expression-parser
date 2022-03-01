@@ -89,10 +89,10 @@ public class ExpressionParser implements Parser {
                 return new CheckedNegate(prim(tokens));
             }
             case LZ: {
-                return new LeftZeroes(prim(tokens));
+                return new LeftZeros(prim(tokens));
             }
             case RZ: {
-                return new RightZeroes(prim(tokens));
+                return new RightZeros(prim(tokens));
             }
             case L_BR: {
                 MyExpression res = minMax(tokens);
